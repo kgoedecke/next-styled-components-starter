@@ -1,0 +1,47 @@
+{
+  "name": "recruitbee-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ./src --cache",
+    "lint:init": "eslint --init",
+    "lint:branch-name": "branch-name-lint"
+  },
+  "branchNameLinter": {
+    "prefixes": [
+      "feature",
+      "fix",
+      "chore"
+    ],
+    "suggestions": {
+      "feat": "feature",
+      "features": "feature",
+      "hotfix": "fix"
+    }
+  },
+  "dependencies": {
+    "next": "10.0.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "babel-eslint": "^10.1.0",
+    "branch-name-lint": "1.4.1",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "4.3.8",
+    "prettier": "2.2.1"
+  }
+}
